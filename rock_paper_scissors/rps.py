@@ -5,6 +5,11 @@ import sys
 def rock_paper_scissors(n):
     # what are the choices
     plays = ['rock', 'paper', 'scissors']
+    choice_set = []
+    for x in plays:
+        choice_set.append(x) * n
+        print(choice_set)
+
     awnser = []
     round_count = 0
     #iterate over the choices that could be made
@@ -33,5 +38,5 @@ if __name__ == "__main__":
     print('Usage: rps.py [num_plays]')
 
 
-test = 1
+test = 2
 print(rock_paper_scissors( test))
